@@ -1,0 +1,26 @@
+<h3>Products</h3>
+
+<!-- Step 1, 2 -->
+
+<!-- {{ products }} <br> -->
+<!-- {{ products | json }} <br> -->
+<!-- {{ products.name}} -->
+
+<!-- <pre>{{ products | json }}</pre> -->
+
+<ul> 
+  <!-- $index -->
+  @for(prod of products; track prod.id){ 
+  <!-- <li>{{ prod | json }} </li>  -->
+    <li>{{ prod.name }}</li>
+  } 
+</ul>
+
+<!-- <table border=1>
+
+  @for(prod of products; track prod.id){ <!-- $index-->
+  <!-- <li>{{ prod | json }} </li>  -->
+    <!-- <tr><td>{{prod.id}}</td><td>{{ prod.name }}, {{ prod.id }}</td></tr> -->
+  <!-- }  -->
+
+<!-- </table> -->
